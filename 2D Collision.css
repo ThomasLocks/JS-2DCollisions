@@ -1,0 +1,108 @@
+#main {
+  position: absolute
+}
+
+#view {
+ position: absolute
+}
+
+#home {
+	position: absolute;
+	left: -2px;
+	top: 3.5px;
+	bottom: 0px;
+}
+
+#canvas_one {
+	position:absolute;
+}
+
+#canvas_two {
+	position:absolute;
+}
+
+#canvas_three {
+	position:absolute;
+}
+
+#div0 {
+  max-width: 700px; 
+}
+
+#div1 {
+  max-width: 688px;
+  margin-left: 10;
+}
+
+#startAnimation {
+float: left;
+   max-width: 300px;
+}
+
+
+#stopAnimation {
+   float: left;
+   max-width: 300px;
+}
+
+#centerofmass {
+   float: left;
+   max-width: 250px;
+}
+
+#reset {
+float: left;
+   max-width: 85px;
+   width: 85px;
+   margin-left: 10px;
+}
+
+
+#div2 {
+  max-width: 700px;
+}
+
+#mdiv {
+  float: left;
+  max-width: 415px;
+  margin-left: -60px;
+  width: 430px;
+}
+
+#mdivlabel{
+   margin-left: 70px;
+}
+
+#sdiv {
+  float: left;
+  max-width: 415px;
+  margin-left: -70px;
+  width: 430px;
+}
+
+#sdivlabel{
+   margin-left: 70px;
+}
+
+#masslog {
+clear: both;
+width: 400;
+font-weight: bold;
+margin-left: 95px;
+float: left;
+}
+
+#anglelog {
+width: 400;
+font-weight: bold;
+margin-left: 17px;
+float: left;
+}
+
+#explanation {
+clear: both;
+width: 678;
+margin-top: 15px;
+margin-left: 10px;
+float: left;
+}

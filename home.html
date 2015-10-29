@@ -1,0 +1,71 @@
+
+<html>
+
+<HEAD>
+	<meta http-equiv=Content-Type content="text/html;  charset="utf-8">
+	<TITLE>2D Elastic Collisions</TITLE>	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+    <link rel="stylesheet" href="2D Collision.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</HEAD>
+
+<BODY data-role="page" height=90% width=100%>
+	<header>
+	<div id="header" data-role="header">
+		<h1>
+			<a id="home" class="btn" href="http://galileoandeinstein.physics.virginia.edu/more_stuff/Applets/home.html" data-ajax ="false">
+				<span class="glyphicon glyphicon-home" aria-hidden="false"></span>
+			</a>
+	    	<b>Elastic Collisions</b>
+        </h1>
+    </div>
+    </header>
+
+	<div id = "main">
+		<div id= "view">
+			<canvas id="canvas_one" width="700" height="500"> Display Error </canvas>
+			<canvas id="canvas_two"> Display Error </canvas>
+			<canvas id="canvas_three"> Display Error </canvas>
+		</div>
+		<div id="div0">
+			<input type="range" name="play_slider" id="play_slider" value="0" min="0" max="400" step = "1" data-popup-enabled="true">
+		</div>
+		<div id="div1">
+			<button id="startAnimation"> <span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+			<button id="stopAnimation"> <span class="glyphicon glyphicon-pause" aria-hidden="true"></span></button>
+			<button data-inline="true" id="reset" type="button">
+				 <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+			</button>
+			<button id="centerofmass"> <span id="comlabel"> Display Center of Mass </span> </button>
+		</div>
+		<div id="div2">
+			<div id="mdiv">
+				<label for="mass_ratio"> <span id="mdivlabel"> Set mass ratio: </span> </label>
+				<input type="range" name="mass_ratio" id="mass_ratio" value="0" min="-3" max="3" step = "1" data-popup-enabled="false" class="ui-hidden-accessible">
+			</div>
+			<div id="sdiv">
+				<label for="angle"><span id="sdivlabel"> Set angle: </span> </label>
+				<input type="range" name="angle" id="angle" value="0" min="-90" max="90" step = "1" data-popup-enabled="false" class="ui-hidden-accessible">
+			</div>
+		</div>
+		<div id="masslog"> <p id="bmass">(Orange) 1 : 1 (White)</p></div>
+		<div id="anglelog"> <p id="bangle"> 0&#176; </p></div>
+		<div id="explanation" data-role="collapsible">
+        	<h3>Understanding Elastic Collisions</h3>
+			<p>Todo</p>
+    	</div>
+	</div>
+	</div>
+	<p align="left">&nbsp;</p>
+	
+	
+	<script src="utils.js"></script>
+	<script src="2D Collision.js"></script>
+
+</BODY>
+</html>
